@@ -27,10 +27,20 @@ let testi = [
     review: "Dashwanth Advertising Solutions has been instrumental in elevating our online presence. Their expertise in SEO has significantly improved our search engine rankings, driving more organic traffic to our website. Their tailored YouTube ad campaigns have not only increased our visibility but also enhanced our brand recognition. Additionally, their seamless integration of SSL certificates has fortified our website's security, instilling greater trust among our customers. Highly recommended for comprehensive digital marketing services."
   },
   {
-    name: 'Jobys',
-    rate: '4.3',
-    review: "Dibility but also enhanced our brand recognition. Additionally, their seamless integration of SSL certificates has fortified our website's security, instilling greater trust among our customers. Highly recommended for comprehensive digital marketing services."
-  }
+    name: 'Neha Kapoor',
+    rate: '4.5',
+    review: "I totally recommend them. They are the best."
+  },
+  {
+    name: 'Shirish Mehra',
+    rate: '4.5',
+    review: "Very trustworthy and genuine. Been dealing with them for quite a while now."
+  },
+  {
+    name: 'Pankaj Jha',
+    rate: '4.5',
+    review: "They offer everything excellent quality. Really appreciated."
+  },
 ]
 
 let num = 0;
@@ -78,9 +88,7 @@ window.addEventListener('scroll', () => {
       navBtn.forEach((navbtn) => {
         navbtn.classList.remove('active');
         if(navbtn.getAttribute('href') == `#${currentSection}`){
-          // removeact.classList.remove('active');
           navbtn.classList.add('active');
-          // console.log("done!")
         }
       })
     }

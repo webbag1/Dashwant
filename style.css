@@ -145,8 +145,6 @@ span{
     }
     
     .mobheader {
-    }
-    .mobheader {
         position: absolute;
         margin-top: 15px;
         flex-direction: column;
@@ -218,7 +216,7 @@ span{
         flex-direction: column-reverse;
     }
     .illu {
-        width: 70%;
+        width: 90%;
     }
     .illutrasion{
         display: flex;
@@ -229,11 +227,11 @@ span{
 }
 @media (max-width: 405px){
     .com_name {
-        font-size: 28px;
+        font-size: 35px;
     }
-    .com_des {
+    /* .com_des {
         font-size: 12px;
-    }
+    } */
     .typ2{
         margin-top: 10px;
         width: 90px;
@@ -256,6 +254,7 @@ span{
     border-radius: 40px;
     transition: all ease-in .1s;
 }
+
 .fa-angle:active{
     width: 55px;
     height: 55px;
@@ -263,8 +262,12 @@ span{
 #testi_review,#testi_rate{
     color: var(--bgcolor);
 }
+.reviwe_cont h1{
+    margin-bottom: 10px;
+}
 .reviwe_cont {
     flex-direction: column;
+
 }
 .reviwe_card h2{
     color: var(--accent-color);
@@ -391,6 +394,10 @@ span{
 
 
 @media (max-width: 410px){
+    .fa-angle{
+        width: 26px;
+        height: 48px;
+    }
     .reviwe_des{
         font-size: 14px;
     }
@@ -398,7 +405,7 @@ span{
         font-size: 25px;
     }
     .fa-angle{
-        font-size: 35px;
+        font-size: 20px;
         margin: 8px;
     }
     .recont {
@@ -619,12 +626,10 @@ span{
 
 
 /* -------------servies---------- */
-.servies {}
+
 .servies_cont {
     flex-direction: column;
 }
-.servies_head {}
-.servies_head h1 {}
 .servies_list {
     gap: 20px;
     margin-top: 30px;
