@@ -94,4 +94,27 @@ window.addEventListener('scroll', () => {
     }
   });
 
-})
+});
+
+
+let f_xmark = document.getElementById('f_xmark');
+let float = document.getElementById('float');
+// let phone_copybtn = document.getElementById('phone_copybtn');
+// let mail_copybtn = document.getElementById('mail_copybtn');
+function floatt() {
+  float.style.display = 'flex';
+}
+document.getElementById('servies_card').addEventListener('click', () => floatt());
+document.getElementById('servies_card1').addEventListener('click', () => floatt());
+document.getElementById('servies_card2').addEventListener('click', () => floatt());
+document.getElementById('servies_card3').addEventListener('click', () => floatt());
+
+f_xmark.addEventListener('click', () => {
+  float.style.display = 'none'
+});
+function copyNum() {
+  navigator.clipboard.writeText("+918095045811");
+}
+function copyMail() {
+  navigator.clipboard.writeText('admagnetix108@gmail.com');
+}
