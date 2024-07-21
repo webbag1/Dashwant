@@ -39,8 +39,8 @@ body {
     align-items: center;
 }
 .baselen{
-    height: 100vh;
-    max-height: 735px;
+    min-height: 100vh;
+    /* max-height: 735px; */
 }
 .webhost {
     flex-direction: column;
@@ -393,7 +393,7 @@ span{
 }
 
 
-@media (max-width: 410px){
+@media (max-width: 480px){
     .fa-angle{
         width: 26px;
         height: 48px;
@@ -474,7 +474,7 @@ span{
 }
 .line {
     width: 1px;
-    height: 80%;
+    height: 130px;
     border-radius: 100%;
     background: #ffffff;
     opacity: 0;
@@ -494,7 +494,7 @@ span{
     color: var(--accent-color);
 }
 
-@media (max-width: 1007px) {
+@media (max-width: 1037px) {
 
     .contact_info {
         flex-direction: column;
@@ -651,7 +651,7 @@ span{
     transition: all ease-in-out 0.4s;
     animation: flipInX 0.5s linear forwards;
     animation-timeline: view();
-    animation-range: 50px 450px;
+    animation-range: 50px 400px;
 }
 .servies_name h2 {
     font-weight: 900;
@@ -731,6 +731,32 @@ span{
     }
 }
 
+.check_out{
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background: var(--bgcolor);
+    cursor: pointer;
+}
+
+
+@media (max-width: 595px){
+    .servies_card {
+        width: 278px;
+        padding: 4px;
+    }
+    .servies_icon {
+        font-size: 50px;
+        margin: 7px 0;
+    }
+    .servies_name h2 {
+        font-size: 20px;
+    }
+    .servies_des{
+        font-size: 14px;
+    }
+}
 @media (max-width: 1163px){
     .servies_list {
         gap: 20px;
