@@ -543,11 +543,13 @@ span{
     background: var(--accent-color);
     border-radius: 20px;
     padding: 10px;
+    flex-direction: column;
     box-shadow: 4px 4px 0 0 var(--text-color);
     animation: backInUp ease-in-out forwards ;
     animation-timeline: view();
     animation-range: 50px 300px;
-    opacity: 0
+    opacity: 0;
+    transition: height .1s ease-in-out;
 }
 
 @-webkit-keyframes backInUp {
@@ -602,8 +604,11 @@ span{
 .whyus_descript{
     display: none;
 }
+.whyus_card:hover{
+    height: 188px;
+}
 .whyus_card:hover .whyus_descript{
-
+    display: inline-block;
 }
 .whyus_des {
     font-size: 75%;
