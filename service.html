@@ -3,68 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>get a Web-Developer</title>
+    <title>Service</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./service.css">
     <script src="https://kit.fontawesome.com/b7514a30f9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="service.css">
+
+
 </head>
 <body>
+    
     <!-- header -->
     <div class="header cen">
         <div class="logoContainer"><img src="./img/logo.png" alt="logo" class="img-logo"></div>
         <div class="herderBtn">
             <ul class="cen">
-                <li><a href="index.html#home" class="navBtn active">Home</li></a>
-                <li><a href="index.html#testimonials" class="navBtn">Testimonials</li></a>
-                <li><a href="index.html#servies" class="navBtn">Servies</li></a>
-                <li><a href="index.html#whyus" class="navBtn">whyus</li></a>
+                <li><a href="index.html#home" class="navBtn" aria-label="home">Home</li></a>
+                <li><a href="index.html#servies" class="navBtn" aria-label="service">Servies</li></a>
+                <li><a href="#google" class="navBtn" aria-label="google">Google</li></a>
+                <li><a href="#meta" class="navBtn" aria-label="meta">Meta</li></a>
+                <li><a href="#seo" class="navBtn" aria-label="seo">SEO</li></a>
+                <li><a href="#web_dev" class="navBtn" aria-label="web-dev">Web-Dev</li></a>
             </ul>
         </div>
         <div class="contactbtn">
             <ul class="cen">
-                <a href="index.html#contact"><li class="stybtn">Contact Me</li></a>
+                <a href="#contact" aria-label="contacts"><li class="stybtn">Contact Me</li></a>
             </ul>
         </div>
         <div class="opt" id="bar"><i class="fa-solid fa-bars"></i></div>
         <div class="mobheader cen " id="drop">
             <span><i class="fa-solid fa-xmark" id="xmark"></i></span>
             <ul>
-                <li><a href="index.html#home" class="navBtn active">Home</li></a>
-                <li><a href="index.html#testimonials" class="navBtn">Testimonials</li></a>
-                <li><a href="index.html#servies" class="navBtn">Servies</li></a>
-                <li><a href="index.html#whyus" class="navBtn">Whyus</li></a>
+                <li><a href="index.html#home" class="navBtn" aria-label="home">Home</li></a>
+                <li><a href="index.html#servies" class="navBtn" aria-label="service">Servies</li></a>
+                <li><a href="#google" class="navBtn" aria-label="google">Google</li></a>
+                <li><a href="#meta" class="navBtn" aria-label="meta">Meta</li></a>
+                <li><a href="#seo" class="navBtn" aria-label="seo">SEO</li></a>
+                <li><a href="#web_dev" class="navBtn" aria-label="web-dev">Web-Dev</li></a>
             </ul>
         </div>
     </div>
 
-    <!-- Googel Ads -->
-    <div class="googel baselen cen" id="google">
-        <h1>Googel Ads</h1>
-
-    </div>
-
-    <!-- Meta Ads -->
-    <div class="meta baselen cen" id="meta">
-        <h1>Meta Ads</h1>
-    </div>
-
-    <!-- web-list -->
-    <div class="wed_dev baselen cen" id="wed_dev">
-        <h1>Web Development</h1>
-        <div class="wede_card">
-            <div class="profile_pic"></div>
-            
+    <!-- google -->
+    <div class="google baselen cen" id="google">
+        <h1>Google Ads</h1>
+        <div class="gallery cen">
+            <i class="fa-solid fa-chevron-left direction" id="chevron-left"></i>
+            <div class="imgs" ><img src="./img/google/google1.jpg" alt="google1" id="img1"></div>
+            <div class="imgs imgs2"><img src="./img/google/google2.jpg" alt="google2"></div>
+            <div class="imgs imgs2"><img src="./img/google/google3.jpg" alt="google3"></div>
+            <i class="fa-solid fa-chevron-right direction" id="chevron-right"></i>
+        </div>
+        <div class="description">
+            <p>We create and manage highly effective Google Ads campaigns that target the right audience, optimize ad spend, and deliver measurable results. Our expertise spans search ads, display ads, shopping ads, and video ads, ensuring your brand gains maximum visibility across Google's extensive network.</p>
+            <div class="cont_btn cen">
+                <div class="floating_card cen">
+                    <div class="contact_no cen">
+                        <div class="num det_hold cen">
+                            <h3>+918095045811</h3>
+                            <i class="fa-solid fa-copy copybtn" id="phone_copybtn" onclick="copyNum()"></i>
+                        </div>
+                        <a href="tel:+918095045811" aria-label="call me"><i class="fa-solid fa-phone conBtn"></i></a>
+                    </div>
+                    <div class="email_id cen">
+                        <div class="email det_hold cen">
+                            <h3>admagnetix108@gmail.com</h3>
+                            <i class="fa-solid fa-copy copybtn" id="mail_copybtn" onclick="copyMail()"></i>
+                        </div>
+                        <a href="mailto:admagnetix108@gmail.com" aria-label="Mail me"><i class="fa-solid fa-square-envelope conBtn"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Meta -->
+    <div class="meta baselen cen" id="meta">
+        <h1>Meta Ads</h1>
+        <div class="gallery cen">
+            <i class="fa-solid fa-chevron-left direction" id="chevron-left_meta"></i>
+            <div class="imgs" ><img src="./img/meta/meta1.jpg" alt="google1" id="img1_meta"></div>
+            <div class="imgs imgs2"><img src="./img/meta/meta2.jpg" alt="google2"></div>
+            <div class="imgs imgs2"><img src="./img/meta/meta3.jpg" alt="google3"></div>
+            <i class="fa-solid fa-chevron-right direction" id="chevron-right_meta"></i>
+        </div>
+        <div class="description">
+            <p>Leveraging the powerful platforms of Facebook and Instagram, we design and execute compelling ad campaigns that engage and convert. Our team uses advanced targeting techniques and creative strategies to reach your ideal customers and drive meaningful interactions.</p>
+            <div class="cont_btn cen">
+                <div class="floating_card cen">
+                    <div class="contact_no cen">
+                        <div class="num det_hold cen">
+                            <h3>+918095045811</h3>
+                            <i class="fa-solid fa-copy copybtn" id="phone_copybtn" onclick="copyNum()"></i>
+                        </div>
+                        <a href="tel:+918095045811" aria-label="call me"><i class="fa-solid fa-phone conBtn"></i></a>
+                    </div>
+                    <div class="email_id cen">
+                        <div class="email det_hold cen">
+                            <h3>admagnetix108@gmail.com</h3>
+                            <i class="fa-solid fa-copy copybtn" id="mail_copybtn" onclick="copyMail()"></i>
+                        </div>
+                        <a href="mailto:admagnetix108@gmail.com" aria-label="Mail me"><i class="fa-solid fa-square-envelope conBtn"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- webdeveloper -->
+    <div class="web_develop baselen cen" id="web_dev">
+        <h1>Web Development</h1>
+        <div class="gallery cen">
+            <i class="fa-solid fa-chevron-left direction" id="chevron-left_web"></i>
+            <div class="imgs" ><img src="./img/web/web1.jpg" alt="google1" id="img1_web"></div>
+            <div class="imgs imgs2"><img src="./img/web/web2.jpg" alt="google2"></div>
+            <div class="imgs imgs2"><img src="./img/web/web3.jpg" alt="google3"></div>
+            <i class="fa-solid fa-chevron-right direction" id="chevron-right_web"></i>
+        </div>
+        <div class="description">
+            <p>We offer custom web development solutions that are tailored to meet your business needs. Our skilled developers create responsive, user-friendly, and visually appealing websites that not only look great but also perform optimally across all devices.</p>
+            <div class="cont_btn cen">
+                <div class="floating_card cen">
+                    <div class="contact_no cen">
+                        <div class="num det_hold cen">
+                            <h3>+918095045811</h3>
+                            <i class="fa-solid fa-copy copybtn" id="phone_copybtn" onclick="copyNum()"></i>
+                        </div>
+                        <a href="tel:+918095045811" aria-label="call me"><i class="fa-solid fa-phone conBtn"></i></a>
+                    </div>
+                    <div class="email_id cen">
+                        <div class="email det_hold cen">
+                            <h3>admagnetix108@gmail.com</h3>
+                            <i class="fa-solid fa-copy copybtn" id="mail_copybtn" onclick="copyMail()"></i>
+                        </div>
+                        <a href="mailto:admagnetix108@gmail.com" aria-label="Mail me"><i class="fa-solid fa-square-envelope conBtn"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
     <!-- SEO -->
     <div class="seo baselen cen" id="seo">
         <h1>SEO</h1>
-
+        <div class="gallery cen">
+            <i class="fa-solid fa-chevron-left direction" id="chevron-left_seo"></i>
+            <div class="imgs" ><img src="./img/seo/seo1.jpg" alt="google1" id="img1_seo"></div>
+            <div class="imgs imgs2"><img src="./img/seo/seo2.jpg" alt="google2"></div>
+            <div class="imgs imgs2"><img src="./img/seo/seo3.jpg" alt="google3"></div>
+            <i class="fa-solid fa-chevron-right direction" id="chevron-right_seo"></i>
+        </div>
+        <div class="description">
+            <p>Our SEO services are designed to improve your website's organic search rankings and drive traffic. From on-page optimization to link building and content strategy, we employ best practices to ensure your site achieves top positions on search engine results pages (SERPs).</p>
+            <div class="cont_btn cen">
+                <div class="floating_card cen">
+                    <div class="contact_no cen">
+                        <div class="num det_hold cen">
+                            <h3>+918095045811</h3>
+                            <i class="fa-solid fa-copy copybtn" id="phone_copybtn" onclick="copyNum()"></i>
+                        </div>
+                        <a href="tel:+918095045811" aria-label="call me"><i class="fa-solid fa-phone conBtn"></i></a>
+                    </div>
+                    <div class="email_id cen">
+                        <div class="email det_hold cen">
+                            <h3>admagnetix108@gmail.com</h3>
+                            <i class="fa-solid fa-copy copybtn" id="mail_copybtn" onclick="copyMail()"></i>
+                        </div>
+                        <a href="mailto:admagnetix108@gmail.com" aria-label="Mail me"><i class="fa-solid fa-square-envelope conBtn"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer" id="contact">
         <div class="footer_cont">
             <div class="footer_left cen">
                 <div class="footer_intro">
@@ -75,11 +189,11 @@
                     <div class="footer_list cen">
                         <h3>Links</h3>
                         <ul>
-                            <a href="#home"><li>Home</li></a>
-                            <a href="#testimonials"><li>Testimonials</li></a>
-                            <a href="#servies"><li>Servies</li></a>
-                            <a href="#contact"><li>Contact</li></a>
-                            <a href="#whyus"><li>Why Us</li></a>
+                            <a href="#home" aria-label="home"><li>Home</li></a>
+                            <a href="#testimonials" aria-label="testimonials"><li>Testimonials</li></a>
+                            <a href="#servies" aria-label="service"><li>Servies</li></a>
+                            <a href="#contact" aria-label="Contacts"><li>Contact</li></a>
+                            <a href="#whyus" aria-label="whyus"><li>Why Us</li></a>
                         </ul>
                     </div>
                     <!-- <div class="line2"></div> -->
@@ -95,11 +209,11 @@
                     <div class="footer_list cen">
                         <h3>Connection</h3>
                         <ul class="cen">
-                            <a href="/"><li><i class="fa-brands fa-instagram connect"></i></li></a>
-                            <a href="/"><li><i class="fa-brands fa-facebook connect"></i></li></a>
-                            <a href="https://www.linkedin.com/in/dashwanth-srinivasa-670737254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><li><i class="fa-brands fa-linkedin connect"></i></li></a>
-                            <a href="https://wa.me/+918095045811"><li><i class="fa-brands fa-whatsapp connect"></i></li></a>
-                            <a href="https://jsdl.in/DT-159ZQWT12S8"><li>
+                            <a href="/" aria-label="instagram"><li><i class="fa-brands fa-instagram connect"></i></li></a>
+                            <a href="/" aria-label="facebook"><li><i class="fa-brands fa-facebook connect"></i></li></a>
+                            <a href="https://www.linkedin.com/in/dashwanth-srinivasa-670737254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="linkedin"><li><i class="fa-brands fa-linkedin connect"></i></li></a>
+                            <a href="https://wa.me/+918095045811" aria-label="whatsapp"><li><i class="fa-brands fa-whatsapp connect"></i></li></a>
+                            <a href="https://jsdl.in/DT-159ZQWT12S8" aria-label="Justdail"><li>
                                 <svg
                                    version="1.1"
                                    x="0px"
@@ -132,6 +246,8 @@
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+
+    <!-- <script src="./app.js"></script> -->
+    <script src="./service.js"></script>
 </body>
 </html>

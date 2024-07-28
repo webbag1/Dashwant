@@ -44,7 +44,7 @@ let testi = [
 ]
 
 let num = 0;
-prvbtn.addEventListener("click", () => {
+prvbtn.addEventListener('click', () =>{
   if(num>0){
     num--;
     testi_review.textContent = testi[num].review;
@@ -93,14 +93,11 @@ window.addEventListener('scroll', () => {
       })
     }
   });
-
 });
 
 
 let f_xmark = document.getElementById('f_xmark');
 let float = document.getElementById('float');
-// let phone_copybtn = document.getElementById('phone_copybtn');
-// let mail_copybtn = document.getElementById('mail_copybtn');
 function floatt() {
   float.style.display = 'flex';
 }
@@ -118,3 +115,5 @@ function copyNum() {
 function copyMail() {
   navigator.clipboard.writeText('admagnetix108@gmail.com');
 }
+
+
